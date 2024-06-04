@@ -1,0 +1,218 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+}
+
+.Parent {
+    border: solid 1px white;
+    background: white;
+    border-radius: 10px;
+    padding: 70px;
+    padding-bottom: 150px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h3{
+    position: relative;
+    bottom: 20px;
+    font-size: 30px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.visible {
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+
+button{
+    display: flex;
+    width: 300px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(172, 205, 236, 0.342);
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon{
+    position: relative;
+    right: 10px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.s1{
+    position: relative;
+    bottom: 15px;
+}
+
+.s2{
+    position: relative;
+    top: 15px;
+}
+
+.s3{
+    position: relative;
+    top: 15px;
+}
+
+.LOG{
+    background-color: rgba(17, 0, 255, 0.76);
+    color: white;
+    position: relative;
+    top: 10px;
+}
+
+
+
+input[type=text]{
+    padding: 13px;
+    width: 267px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+
+input[type=password]{
+    padding: 13px;
+    position: relative;
+    top: 10px;
+    width: 267px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+.GitHub{
+    position: relative;
+    top: 10px;
+}
+
+.GitHub:hover{
+    background: rgba(0, 0, 0, 0.082);
+    transition: 1s;
+}
+
+
+.Google:hover{
+    background: rgba(0, 0, 0, 0.082);
+    transition: 1s;
+}
+
+.LOG:hover{
+    background: rgba(0, 0, 0, 0.137);
+    color: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+
+.Check{
+    display: flex;
+    gap: 50px;
+}
+
+.p1{
+    position: relative;
+    top: 30px;
+}
+
+/* Login End */
+
+
+/* Media Queries */
+@media (max-width: 425px){
+    .Parent{
+        width: 250px;
+    }
+
+    input[type=text]{
+        position: relative;
+        right: 15px;
+        width: 250px;
+    }
+
+    
+    input[type=password]{
+        position: relative;
+        right: 15px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 375px){
+    .Parent{
+        width: 200px;
+    }
+
+    input[type=text]{
+        position: relative;
+        right: 40px;
+        width: 250px;
+    }
+
+    
+    input[type=password]{
+        position: relative;
+       right: 40px;
+       width: 250px;
+    }
+}
+
+
+@media (max-width: 320px){
+    .Parent{
+        width: 150px;
+    }
+
+    .Google{
+        width: 250px;
+    }
+
+    
+    .GitHub{
+        width: 250px;
+    }
+
+    .LOG{
+        width: 250px;
+    }
+
+    .Check{
+        display: block;
+    }
+
+    input[type=text]{
+       position: relative;
+       right: 35px;
+       width: 200px;
+    }
+
+    
+    input[type=password]{
+        position: relative;
+        right: 35px;
+        width: 200px;
+    }
+}
